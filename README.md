@@ -10,7 +10,7 @@ A basic and catppuccin based neovim setup
 
 ## Installation
 
-Dependencies: Neovim, true colour terminal like iTerm2 for MacOS
+Dependencies: Neovim, true colour terminal like kitty or iTerm2 for MacOS
 
 For Linux and macOS
 ```

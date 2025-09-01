@@ -52,6 +52,13 @@ require('lazy').setup({
   },
 
   {
+    'L3MON4D3/LuaSnip',
+    config = function()
+      require("luasnip.loaders.from_lua").load {paths = "~/.config/nvim/luasnippets"}
+    end,
+  },
+
+  {
     -- Autocompletion
     'hrsh7th/nvim-cmp',
     dependencies = {
