@@ -43,6 +43,7 @@ ls.add_snippets("tex", {
 	    \usepackage[left=2cm, right=2cm, top=1cm]{{geometry}}
 	    \usepackage{{graphicx}}
 	    \usepackage{{xeCJK}}
+	    \hypersetup{{colorlinks=true, linkcolor=blue}}
 
 	    \setCJKmainfont{{Source Han Serif}}
 
@@ -51,6 +52,7 @@ ls.add_snippets("tex", {
 	    
 	    \begin{{document}}
 	    \maketitle
+	    \tableofcontents
 
 	    {}
 
@@ -82,6 +84,17 @@ ls.add_snippets("tex", {
 	    \item {}
 	]], {
 	    i()
+	}
+    )),
+    s("matrix", fmt(
+	[[
+\left[ 
+    \begin{{array}}{{ccc|c}}
+	{} & 0 & 0 & 0 \\
+    \end{{array}}
+\right]
+	]], {
+	    i(1)
 	}
     )),
 })
